@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js" type="text/javascript" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js" type="text/javascript" charset="utf-8">
+	</script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script> -->
+	<!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="../../assets/css/style.css">
+	<title>Document</title>
+</head>
+<body>
+
+	<nav>
+		<ul>
+			<li>User CRM</li>
+			<li><a href="#/"><i class="fa fa-user" aria-hidden="true"></i>
+Users</a></li>
+			<li><a href="#/login"><i class="fa fa-key" aria-hidden="true"></i>
+Login</a></li>
+			<li>Hello</li>
+			<li><a href=""><i class="fa fa-user-times" aria-hidden="true"></i>
+Logout</a></li>
+			<li><a href="#/newUser">New User</a></li>
+			<li><a href="#/editUser">Edit User</a></li>
+			<li><a href="#/test">test</a></li>
+		</ul>	
+	</nav>
+	
+	<div ng-view class="jumbotron"></div>
+
+<!-- <script src="./../scripts/angular.js""></script> -->
+<!-- <script src="./../scripts/angular-route.js"></script> -->
+<script src="../../assets/js/app.js"></script>
+<script src="../../assets/js/app.routes.js"></script>
+<script src="../../app/controllers/userCtrl.js"></script>
+<script src="../../app/controllers/mainCtrl.js"></script>
+</body>
+</html>

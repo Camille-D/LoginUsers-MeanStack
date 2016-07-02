@@ -1,0 +1,41 @@
+<h3>{{message}}</h3>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="data in myData">
+        <td>{{data.name}}</td>
+        <td>{{data.username}}</td>
+        <td>{{data.password}}</td>
+        <td><button class="btn btn-warning" ng-click="editUs(data)">Edit</button>
+        <button class="btn btn-danger" ng-click="suppUs(data)">X</button></td>
+        <!-- <div ng-show='true'>
+          <form ng-submit="addUser()">
+            <input type="text" placeholder="Name" ng-model="user.name" required>
+            <input type="text" placeholder="Username" ng-model="user.username" required>
+            <input type="password" placeholder="Password" ng-model="user.password" required>
+            <button class="btn btn-success" type="submit">+</button>
+          </form>
+        </div> -->
+      </tr>
+    </tbody>
+</table>
+
+<h5>Ajouter un nouvel utilisateur</h5>
+
+<form ng-submit="addUser()">
+  	<input type="text" placeholder="Name" ng-model="user.name" required>
+  	<input type="text" placeholder="Username" ng-model="user.username" required>
+  	<input type="password" placeholder="Password" ng-model="user.password" required>
+  	<button class="btn btn-success" type="submit">+</button>
+</form>
+
+  
+<p>{{user.name}}</p><p>{{user.username}}</p><p>{{user.password}}</p>
+

@@ -1,0 +1,24 @@
+
+<div class="container" id="containerLogin">
+	<h1>Login</h1>
+	<form ng-submit="loginUser()">
+		<fieldset class="form-group">
+			<label for="name">Username</label><br>
+			<input type="text" placeholder="Name" class="form-control" ng-model="user.username" required/>
+		</fieldset>
+		<fieldset class="form-group">
+			<label for="password">Password</label><br>
+			<input type="password" placeholder="Password" class="form-control" ng-model="user.password" required/>
+		</fieldset>
+		<br>
+		<div class="alert alert-danger" role="alert" ng-show="access">
+			<strong>Oh snap!</strong> Utilisateur est déjà existant.
+		</div>
+		<div class="alert alert-success" role="alert" ng-show="access">
+			<strong>Oh snap!</strong> Utilisateur est déjà existant.
+		</div>
+		<fieldset class="form-group">
+			<button class="btn btn-primary" type="submit">SUBMIT</button>
+		</fieldset>
+	</form>
+</div>

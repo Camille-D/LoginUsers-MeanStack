@@ -1,0 +1,49 @@
+nav {
+	background-color: black;
+	color: white;
+	min-height: 50px;
+	width: 100%;
+	text-align: right;
+}
+
+ul li{
+	display: inline-block;
+	margin: 20px;
+	list-style: none;
+}
+
+ul li:nth-child(1), li:nth-child(2) {
+	float: left;
+}
+
+a, a:hover {
+	color: white;
+	font-weight: bold;
+}
+
+/*view injecteur de template*/
+
+.jumbotron {
+	width: 98%;
+	margin: auto;
+}
+
+/*page home*/
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 76vh;
+}
+
+.container button, .container input {
+	width: 280px;
+	/*padding: 10px;*/
+	/*margin: 10px;*/
+}
+
+.alert {
+	width: 280px;
+}
